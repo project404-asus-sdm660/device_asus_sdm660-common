@@ -50,6 +50,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     ro.bluetooth.a2dp_offload.supported=true \
     ro.bluetooth.library_name=libbluetooth_qti.so \
+    vendor.hw.fm.init=0 \
     vendor.bluetooth.soc=cherokee
 
 # Camera
