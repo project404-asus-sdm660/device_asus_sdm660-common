@@ -25,7 +25,6 @@ TARGET_BOARD_PLATFORM := sdm660
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
@@ -253,10 +252,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 TARGET_NFC_SKU := NFC
 
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
-
 # Netflix
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q660-13149-1
@@ -333,11 +328,8 @@ TARGET_COMMON_QTI_COMPONENTS += all
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.6.vendor \
     android.hardware.secure_element@1.1 \
     android.hardware.radio.config@1.3.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
     librmnetctl \
     libprotobuf-cpp-full
 
