@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     coreApp="true"
-    package="co.aospa.frameworks.asus_sdm660">
+    package="P404.frameworks.asus_sdm660">
 
     <overlay
         android:isStatic="true"
