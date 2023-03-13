@@ -272,9 +272,9 @@ PRODUCT_PACKAGES += \
     AsusSDM660Frameworks \
     AsusSDM660Settings
 
-# Paranoid Doze
+# P-404 Doze
 PRODUCT_PACKAGES += \
-    ParanoidDoze
+    P-404Doze
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.sensor.proximity=true \
