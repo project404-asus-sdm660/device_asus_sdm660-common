@@ -38,7 +38,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.service.bdroid.sibs=false \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.vendor.qcom.bluetooth.soc=cherokee \
     vendor.qcom.bluetooth.soc=cherokee
