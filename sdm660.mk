@@ -105,8 +105,14 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
-# Dalvik vm configuration
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+# Dalvik overrides
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=512k \
+    dalvik.vm.heapmaxfree=8m
 
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
