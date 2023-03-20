@@ -188,7 +188,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Graphics
 PRODUCT_VENDOR_PROPERTIES += \
-    debug.renderengine.backend=threaded
+    debug.renderengine.backend=skiaglthreaded
 
 # Health
 PRODUCT_PACKAGES += \
