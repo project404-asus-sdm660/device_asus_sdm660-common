@@ -20,6 +20,10 @@ src/mm_camera_sock.c
 # System header file path prefix
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
+ifeq (1,$(filter 1,$(shell echo "$$(($(PLATFORM_SDK_VERSION) >= 31 ))" )))
+LOCAL_CFLAGS += -Wno-overriding-t-option
+endif
+
 ifeq ($(strip $(TARGET_USES_ION)),true)
 LOCAL_CFLAGS += -DUSE_ION
 endif

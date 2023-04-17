@@ -43,7 +43,7 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3StreamMem.cpp
 
 ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 31 ))" )))
-LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-compound-token-split-by-macro
+LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-compound-token-split-by-macro -Wno-overriding-t-option
 else
 LOCAL_CFLAGS := -Wall -Wextra -Werror
 endif

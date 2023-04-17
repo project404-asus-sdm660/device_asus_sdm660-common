@@ -73,6 +73,10 @@ endif
 # System header file path prefix
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
+ifeq (1,$(filter 1,$(shell echo "$$(($(PLATFORM_SDK_VERSION) >= 31 ))" )))
+LOCAL_CFLAGS += -Wno-overriding-t-option
+endif
+
 LOCAL_SRC_FILES := \
     src/mm_jpeg_queue.c \
     src/mm_jpeg_exif.c \
