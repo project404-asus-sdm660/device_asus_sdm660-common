@@ -21,7 +21,7 @@ src/mm_camera_sock.c
 LOCAL_CFLAGS += -DSYSTEM_HEADER_PREFIX=sys
 
 ifeq (1,$(filter 1,$(shell echo "$$(($(PLATFORM_SDK_VERSION) >= 31 ))" )))
-LOCAL_CFLAGS += -Wno-overriding-t-option
+LOCAL_CFLAGS += -Wno-overriding-t-option -Wno-unused-but-set-variable
 endif
 
 ifeq ($(strip $(TARGET_USES_ION)),true)
