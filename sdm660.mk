@@ -65,7 +65,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libxml2
+    libxml2 \
+    libyuv
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.camera.eis.enable=1 \
