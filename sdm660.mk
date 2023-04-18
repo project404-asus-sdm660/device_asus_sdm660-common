@@ -182,6 +182,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 
 # GPS
+
+PRODUCT_PACKAGES += \
+    libcurl
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.overlay.izat.optin=rro
 
