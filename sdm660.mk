@@ -229,7 +229,8 @@ PRODUCT_PACKAGES += \
     libmediametrics \
     libregistermsext \
     libstagefright_enc_common \
-    libavmediaserviceextensions
+    libavmediaserviceextensions \
+    libjsoncpp
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
